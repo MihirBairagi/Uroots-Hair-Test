@@ -69,7 +69,7 @@ export default function PlanScreen() {
 
           <div className="question-screen__hero plan-screen__hero">
             <p className="question-screen__intro plan-screen__intro">
-              Your plan is ready.
+              Lets Get Started
             </p>
             <h1 className="question-screen__title plan-screen__title">
               Where should we send it?

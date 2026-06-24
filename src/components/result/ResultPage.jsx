@@ -3,6 +3,7 @@ import ResultOverviewSection from "@/components/result/ResultOverviewSection";
 import ResultAddonsSection from "@/components/result/ResultAddonsSection";
 import ResultTestimonialsSection from "@/components/result/ResultTestimonialsSection";
 import ResultFaqSection from "@/components/result/ResultFaqSection";
+import ResultKitFloatingButton from "@/components/result/ResultKitFloatingButton";
 import ResultKitSidebar from "@/components/result/ResultKitSidebar";
 import {
   resultAddOns,
@@ -38,6 +39,7 @@ export default function ResultPage() {
       </div>
 
       <ResultFooter/>
+      <ResultKitFloatingButton />
 
     </main>
   );

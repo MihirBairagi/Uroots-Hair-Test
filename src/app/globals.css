@@ -2166,6 +2166,10 @@ img{
     height: auto;
 }
 
+.result-kit-floating-btn {
+    display: none;
+}
+
 .result-addon-wrap,
 .result-testimonial-wrap,
 .result-faq-wrap {
@@ -2614,10 +2618,18 @@ img{
     }
 }
 
+@media (min-width: 767px){
+    .desktop-none{
+        display: none !important;
+    }
+}
 
 @media (max-width: 768px) {
     html {
         font-size: 2.5vw;
+    }
+    .mobile-none{
+        display: none !important;
     }
     br{
       display: none;
@@ -3407,6 +3419,35 @@ img{
         gap: 2rem;
     }
 
+    .result-kit-floating-btn {
+        position: fixed;
+        left: 2rem;
+        right: 2rem;
+        bottom: 2rem;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 5.8rem;
+        padding: 1.4rem 2rem;
+        border: 1px solid #000000;
+        border-radius: 1.2rem;
+        background: rgb(196, 255, 59);
+        box-shadow: 0 4px 0 0 #000000;
+        color: #1A1A1A;
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight: 600;
+        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    }
+
+    .result-kit-floating-btn.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(1.2rem);
+    }
+
     .result-left-top {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -3419,13 +3460,29 @@ img{
         margin-top: 1rem;
     }
     .result-user-box {
-        max-width: 18rem;
+        background: none;
         margin: 0 auto;
     }
 
     .result-actions {
-        margin: 2.8rem 0;
+        margin: 2.5rem 0;
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
     }
+    .result-actions li {
+        border: none;
+    }
+    .result-actions li:first-child .result-action-button {
+        padding: 0;
+    }
+    .result-actions li:last-child .result-action-button {
+        padding: 0;
+    }
+
 
     .result-action-button span {
         font-size: 1.8rem;
@@ -3457,14 +3514,18 @@ img{
     .result-cause-label {
         font-size: 1.8rem;
     }
+    .result-user-box img {
+        margin: 2rem 0;
+        width: 100%;
+    }
 
-    .result-copy h1 {
+    .result-left-inner h1 {
         margin-bottom: 1rem;
         font-size: 4rem;
         letter-spacing: -0.1rem;
     }
 
-    .result-copy p {
+    .result-left-inner p {
         font-size: 2rem;
     }
 
@@ -3700,7 +3761,7 @@ img{
 
 
     .site-footer {
-        padding: 8rem 0 5rem;
+        padding: 8rem 0 10rem;
     }
     .footer-box {
         gap: 6rem;
@@ -3803,5 +3864,4 @@ img{
 
 
 }
-
 

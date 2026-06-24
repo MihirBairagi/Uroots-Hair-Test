@@ -6,7 +6,12 @@ export default function ResultOverviewSection({ overview }) {
     <section className="result-left-top">
       <div className="result-left-inner">
         <div className="img-box result-user-box">
+          <h1 className="desktop-none" >{overview.greeting}</h1>
           <Image src={overview.userImage} alt="User avatar" />
+          <p className="desktop-none" >
+            Based on your answers, you&apos;re experiencing{" "}
+            <strong>{overview.highlight}</strong> {overview.summarySuffix}
+          </p>
         </div>
 
         <ul className="result-actions" aria-label="Result actions">
@@ -24,7 +29,7 @@ export default function ResultOverviewSection({ overview }) {
       </div>
 
       <div className="result-right-inner">
-        <div className="result-copy">
+        <div className="result-copy mobile-none">
           <h1>{overview.greeting}</h1>
           <p>
             Based on your answers, you&apos;re experiencing{" "}

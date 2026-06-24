@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ResultKitSidebar({ kit }) {
   return (
-    <aside className="result-card result-kit-card">
+    <aside id="personalised-kit" className="result-card result-kit-card">
       <div className="result-kit-head">{kit.eyebrow}</div>
 
       <div className="result-kit-body">
