@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import HeaderLogo from "@/components/common/HeaderLogo";
+import QuizHeader from "@/components/common/QuizHeader";
 import QuestionProgress from "@/components/common/QuestionProgress";
 import DoctorCapsule from "@/components/common/DoctorCapsule";
 import badgeIcon from "@/images/badge-icon.png";
@@ -101,15 +101,13 @@ export default function LifestyleQuestion({ gender }) {
       className={`screen-gradient-bg question-screen lifestyle-screen lifestyle-screen--${normalizedGender}`}
     >
       <div className="container question-shell">
-        <header className="welcome-header">
-          <HeaderLogo className="brand-logo" />
-        </header>
+        <QuizHeader />
 
         <div className="question-screen__content lifestyle-screen__content">
           <QuestionProgress
             className="question-screen__progress"
-            progress={66}
-            questionLabel="Question 6 of 9"
+            progress={70}
+            questionLabel="Question 7 of 10"
           />
 
           <div className="question-screen__hero lifestyle-screen__hero">

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import HeaderLogo from "@/components/common/HeaderLogo";
+import QuizHeader from "@/components/common/QuizHeader";
 import QuestionProgress from "@/components/common/QuestionProgress";
 import DoctorCapsule from "@/components/common/DoctorCapsule";
 import badgeIcon from "@/images/badge-icon.png";
@@ -38,19 +38,17 @@ export default function GenderQuestion() {
   return (
     <section className="screen-gradient-bg question-screen">
       <div className="container question-shell">
-        <header className="welcome-header">
-          <HeaderLogo className="brand-logo" />
-        </header>
+        <QuizHeader />
 
         <div className="question-screen__content">
           <QuestionProgress
             className="question-screen__progress"
-            progress={11}
-            questionLabel="Question 1 of 9"
+            progress={20}
+            questionLabel="Question 2 of 10"
           />
 
           <div className="question-screen__hero">
-            <p className="question-screen__eyebrow">Question 1 of 9</p>
+            <p className="question-screen__eyebrow">Question 2 of 10</p>
             <h2 className="question-screen__intro">Let&apos;s Start Simple.</h2>
             <h1 className="question-screen__title">What is Your Gender?</h1>
 

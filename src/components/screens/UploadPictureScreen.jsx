@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import HeaderLogo from "@/components/common/HeaderLogo";
+import QuizHeader from "@/components/common/QuizHeader";
 import QuestionProgress from "@/components/common/QuestionProgress";
 import DoctorCapsule from "@/components/common/DoctorCapsule";
 import lotusImage from "@/images/lotus.png";
@@ -37,15 +37,13 @@ export default function UploadPictureScreen() {
   return (
     <section className="screen-gradient-bg question-screen upload-screen">
       <div className="container question-shell">
-        <header className="welcome-header">
-          <HeaderLogo className="brand-logo" />
-        </header>
+        <QuizHeader />
 
         <div className="question-screen__content upload-screen__content">
           <QuestionProgress
             className="question-screen__progress"
             progress={100}
-            questionLabel="Question 9 of 9"
+            questionLabel="Question 10 of 10"
           />
 
           <div className="question-screen__hero upload-screen__hero">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import HeaderLogo from "@/components/common/HeaderLogo";
+import QuizHeader from "@/components/common/QuizHeader";
 import QuestionProgress from "@/components/common/QuestionProgress";
 import DoctorCapsule from "@/components/common/DoctorCapsule";
 import badgeIcon from "@/images/badge-icon.png";
@@ -42,15 +42,13 @@ export default function AgeQuestion({ gender }) {
   return (
     <section className="screen-gradient-bg question-screen age-screen">
       <div className="container question-shell">
-        <header className="welcome-header">
-          <HeaderLogo className="brand-logo" />
-        </header>
+        <QuizHeader />
 
         <div className="question-screen__content age-screen__content">
           <QuestionProgress
             className="question-screen__progress"
-            progress={22}
-            questionLabel="Question 2 of 9"
+            progress={30}
+            questionLabel="Question 3 of 10"
           />
 
           <div className="question-screen__hero age-screen__hero">

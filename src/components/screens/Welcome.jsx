@@ -9,7 +9,7 @@ import drSignImage from "@/images/dr-sign.png";
 import lockImage from "@/images/lock.png";
 import groupReviewImage from "@/images/group-review.png";
 
-export default function Welcome({ startHref = "/gender" }) {
+export default function Welcome({ startHref = "/plan" }) {
     return (
         <section className="screen-gradient-bg welcome-section">
             <div className="container welcome-shell">

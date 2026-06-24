@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import HeaderLogo from "@/components/common/HeaderLogo";
+import QuizHeader from "@/components/common/QuizHeader";
 import QuestionProgress from "@/components/common/QuestionProgress";
 import DoctorCapsule from "@/components/common/DoctorCapsule";
 import lotusImage from "@/images/lotus.png";
@@ -52,21 +52,19 @@ export default function PlanScreen() {
       "urootsPlanDetails",
       JSON.stringify(formState),
     );
-    router.push("/upload-picture", { scroll: false });
+    router.push("/gender", { scroll: false });
   };
 
   return (
     <section className="screen-gradient-bg question-screen plan-screen">
       <div className="container question-shell">
-        <header className="welcome-header">
-          <HeaderLogo className="brand-logo" />
-        </header>
+        <QuizHeader />
 
         <div className="question-screen__content plan-screen__content">
           <QuestionProgress
             className="question-screen__progress"
-            progress={95}
-            questionLabel="Question 9 of 9"
+            progress={10}
+            questionLabel="Question 1 of 10"
           />
 
           <div className="question-screen__hero plan-screen__hero">

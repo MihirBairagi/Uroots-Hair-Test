@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import HeaderLogo from "@/components/common/HeaderLogo";
+import QuizHeader from "@/components/common/QuizHeader";
 import QuestionProgress from "@/components/common/QuestionProgress";
 import DoctorCapsule from "@/components/common/DoctorCapsule";
 import badgeIcon from "@/images/badge-icon.png";
@@ -62,15 +62,13 @@ export default function HairProblemQuestion({ gender }) {
   return (
     <section className="screen-gradient-bg question-screen hair-problem-screen">
       <div className="container question-shell">
-        <header className="welcome-header">
-          <HeaderLogo className="brand-logo" />
-        </header>
+        <QuizHeader />
 
         <div className="question-screen__content hair-problem-screen__content">
           <QuestionProgress
             className="question-screen__progress"
-            progress={33}
-            questionLabel="Question 3 of 9"
+            progress={40}
+            questionLabel="Question 4 of 10"
           />
 
           <div className="question-screen__hero hair-problem-screen__hero">
